@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: your-backend-name
+    runtime: python
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: cd backend && gunicorn app:app
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: "true"
+    packages:
+      - nmap
