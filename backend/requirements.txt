@@ -4,3 +4,4 @@ python-nmap==0.7.1
 fpdf==1.7.2
 gunicorn==20.1.0
 werkzeug==2.0.1
+matplotlib==3.5.1
